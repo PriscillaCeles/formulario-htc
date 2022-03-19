@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Formulário HTC - Cadastro</title>
+  </head>
+
+  <body class="container">
+    <form class="form">
+      <h1 class="title">Faça seu cadastro</h1>
+
+      <div class="box">
+        <label class="title-field" for="name-field">Nome completo</label>
+        <input
+          class="input-field"
+          type="text"
+          placeholder="Digite seu nome completo"
+          id="name-field"
+          required
+        />
+      </div>
+
+      <section class="double-box">
+        <div class="box">
+          <label class="title-field" for="date-field">Data de Nascimento</label>
+          <input
+            class="input-field"
+            type="date"
+            placeholder="dd/mm/aaaa"
+            id="date-field"
+            required
+          />
+        </div>
+
+        <div class="box">
+          <label class="title-field">País<em>*</em></label>
+          <select class="input-field" required>
+            <option class="title-field" disabled selected>Selecionar</option>
+            <option class="title-field">Brasil</option>
+            <option class="title-field">Argentina</option>
+            <option class="title-field">Uruguai</option>
+          </select>
+        </div>
+      </section>
+
+      <div class="box">
+        <label class="title-field">Gênero:</label>
+        <div class="gender-options">
+          <div class="group-align">
+            <input type="radio" class="radio-style" name="input-gender" required/>
+            <label class="title-field">Feminino</label>
+          </div>
+          <div class="group-align">
+            <input type="radio" class="radio-style" name="input-gender" required/>
+            <label class="title-field">Masculino</label>
+          </div>
+          <div class="group-align">
+            <input type="radio" class="radio-style" name="input-gender" required/>
+            <label class="title-field">Não declarar</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <label class="title-field" for="email-field">E-mail</label>
+        <input
+          class="input-field"
+          type="email"
+          placeholder="Digite seu e-mail"
+          id="email-field"
+          required
+        />
+      </div>
+
+      <div class="box">
+        <label class="title-field" for="password-field">Senha</label>
+        <input
+          class="input-field"
+          type="password"
+          placeholder="Digite uma senha"
+          id="password-field"
+          required
+        />
+      </div>
+
+      <div class="box">
+        <label class="title-field" for="confirm-password-field"
+          >Confirme sua Senha</label
+        >
+        <input
+          class="input-field"
+          type="password"
+          placeholder="Corfimar senha"
+          id="confirm-password-field"
+          required
+        />
+      </div>
+
+      <div class="term-field">
+        <input type="checkbox" class="checkbox-style" id="term-field" checked />
+        <label class="notes" for="term-field">
+          Aceito os <a target="_blank" href="termos-uso.html">termos e condições</a> e concordo
+          com as <a target="_blank" href="#">politicas de privacidade</a> do Hall To Code.
+        </label>
+      </div>
+
+      <button class="button">Cadastrar</button>
+
+      <p class="notes">
+        Já tem uma conta no Hall To Code? <a href="login.html">Entre agora</a>
+      </p>
+    </form>
+  </body>
+</html>
