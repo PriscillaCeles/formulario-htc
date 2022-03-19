@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>HTC - Login</title>
+  </head>
+
+  <body class="container">
+    <form class="form">
+      <h1 class="title">Faça seu login</h1>
+
+      <div class="box">
+        <label class="title-field" for="email-field">E-mail</label>
+        <input
+          class="input-field"
+          type="email"
+          placeholder="Digite seu e-mail"
+          id="email-field"
+          required
+        />
+      </div>
+
+      <div class="box">
+        <label class="title-field" for="password-field">Senha</label>
+        <input
+          class="input-field"
+          type="password"
+          placeholder="Digite uma senha"
+          id="password-field"
+          required
+        />
+      </div>
+
+      <div class="term-field">
+        <div class="grup-align">
+          <input type="checkbox" class="checkbox-style" id="conect-field" />
+          <label class="notes" for="conect-field">Mantenha-me conectado</label>
+        </div>
+        <div>
+          <span class="notes"><a target="_blank" href="#">Esqueci minha senha</a></span>
+        </div>
+      </div>
+
+      <button class="button">Entra</button>
+
+      <p class="notes">
+        Ainda não tem uma conta? <a href="index.html">Cadastre-se</a>
+      </p>
+    </form>
+  </body>
+</html>
